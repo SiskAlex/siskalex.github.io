@@ -15,6 +15,7 @@
       <h1>Picture This!</h1>
       <h4>My Really Cool Blog Post</h4>
     </div>
+
      <picture>
 
       <!--Square Container Box-->
@@ -36,7 +37,7 @@
 
       <!--Lanscape-->
 
-      <source srcset="images/img-landscape/museum-960_x_540.jpg 960w, 
+      <source srcset="images/img-landscape/museum-960_x_540.jpg 1x, 
       images/img-landscape/x2/museum-1920_x_1080.jpg 2x, 
       images/img-landscape/x3/museum-2880_x_1621.jpg 3x"
       media="(min-width:960px)">
@@ -54,9 +55,14 @@
       <source srcset="images/img-landscape/museum-320_x_180.jpg 1x, 
       images/img-landscape/x2/museum-640_x_360.jpg 2x, 
       images/img-landscape/x3/museum-960_x_540.jpg 3x"
+      media="(min-width:320px)">
+
+      <source srcset="images/img-landscape/museum-320_x_180.jpg 1x, 
+      images/img-landscape/x2/museum-640_x_360.jpg 2x, 
+      images/img-landscape/x3/museum-960_x_540.jpg 3x"
       media="(max-width:320px)">
 
-      <img src="images/museum.jpg" alt="Missing picture of an Art Museum with coutches" style="width: auto;" id="original">
+      <img src="images/museum.jpg" alt="Missing picture of an Art Museum with coutches" id="origin" style="width: 100%; height: auto;">
     </picture>
   </header>
 </body>
