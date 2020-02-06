@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------------------------------------------------------------*/
+/*----------Header-------*/
+.container{
+    font-family: 'Montserrat', sans-serif;
+    color: #333131;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 10rem;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 900;
+    padding: 15px 0px; 
+}
+h2{
+    font-size: 1.6rem;
+    color: grey;
+}
+/*----------------------------------------Body------------------------------*/
+.scooter{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10px;
+    padding: 0px 0px 10px 0px;
+}
+section.form-wrap{
+    margin: 0 auto;
+    margin-bottom: 100px;
+    max-width: 350px;
+    border: none;
+    border-radius: 10%;
+    box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.form-title{
+    font-size: 50px;
+    font-weight: 900;
+}
+input{
+    display: block;
+    width: 95%;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f7ff;
+    padding: 10px 0px 10px 10px;
+    margin: 10px 0px;
+  }
+#drive{
+    background-color: #57eeab;
+    width: 97%;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+/*-------------------------Making A styled checkmark-----------------------------*/
+#checkbox{
+    display: grid;
+    grid-template-columns: 0fr 1fr 13fr;
+    grid-gap: 0px;
+    margin-bottom: 15px;
+}
+#but{
+    display: block;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+.checkmark{
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#checkbox:hover input ~ .checkmark{
+    background-color: #ccc;
+}
+#checkbox input:checked ~ .checkmark{
+    background-color: #ff8480;
+}
+.checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/*-------------------------Making A styled checkmark-----------------------------*/
+.agree{
+    margin: 6px 0px;
+}
+a{
+    color: #ff8480;
+    text-decoration: none;
+}
+.link{
+    margin: 20px 40px 20px 10px;
+}
+
+
+/*---------Footer----------*/
+.footer{
+    background-color: #fffd8c;
+    padding: 100px 0px;
+}
+h3{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+#want{
+    font-size: 1.2rem;
+}
+#bottom{
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: auto auto;
+    grid-gap: 5px 15px;
+}
+
+#calculate{
+    background-color: #ff8480;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    grid-column: 1 /span 2;
+}
+
+#social{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 65px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 0px;
+}
+.media{
+    width: 100%;
+}
+/******************************--Tablet View--***************************/
+
+@media screen and (min-width:35rem){
+    .container{
+            max-width: 550px;
+        }
+        section.form-wrap{
+            max-width: 500px;
+        }
+}
+
+/******************************--Desctop View--***************************/
+
+@media screen and (min-width:90rem){
+  .container{
+      max-width: 100%;
+  }
+  .logo{
+      width: 7rem;
+      margin-right:1000px;
+      margin-left: 70px;
+      padding-bottom: 30px;
+  }
+  .form-wrap{
+      position: absolute;
+      top: 200px; right: 90px;
+      background-color: white;
+  }
+  .scooter{
+      width: 45em;
+      margin-bottom: 35px;
+  }
+  .left{
+      max-width: 400px;
+      position: absolute;
+      top: 200px; left: 130px;
+  }
+  .title{
+      line-height: 80px;
+      margin-bottom: 10px;
+  }
+}
