@@ -41,14 +41,15 @@
                 <div>
                     <input type="text" name="Emailadress" id="email-adress" placeholder="Email Adress">
                 </div>
-                
+                <div>
                 <label id="checkbox">
-                    <input type="checkbox" name="agree" id="but"><span class="checkmark"></span> <div class="agree">I agree to Dash terms </div>
+                    <input type="checkbox" name="agree" id="but"><span class="checkmark"></span> <p class="agree">I agree to Dash terms </p>
                 </label>
+                </div>
+            </form>
                 <div>
                     <button type="submit" id="drive">DRIVE WITH US</button>
                 </div>
-                </form>
                 <div class="link">
                     <p>Already applied? <a href="#">Check your application status here</a></p>
                 </div>
@@ -72,7 +73,10 @@
             <section id="social">
                 <img src="facebook.svg" id="facebook" class="media" alt="missing lik">
                 <img src="img/icons/instagram.svg" id="insta" class="media">
-                <img src="img/icons/twitter.svg" id="twitter" class="media">
+                <picture>
+                    <source srcset="img/icons/twitter-brands.svg" media="(max-width:82.5rem)">
+                    <img src="img/icons/twitter.svg" id="twitter" class="media">
+                </picture>
                 <img src="img/icons/linkedin.svg" id="linked" class="media">
             </section>
                 
