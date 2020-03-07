@@ -1,0 +1,285 @@
+/*Css reset*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*------------------------------Coding starts here----------------------------*/
+/* centering and applying style to the entire page*/
+body{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+/*Eliminating logo from nav for moble & tablet*/
+#bigboy{
+    display: none;
+}
+.logo{
+    display: none;
+}
+nav li{
+    text-align: center;
+    padding: 10px;
+    background-image: linear-gradient(rgba(222, 184, 135, 0.5), rgba(222, 184, 135, 0.2));
+    background-color: saddlebrown;
+}
+nav li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+li:hover{
+    background-color: sandybrown;
+}
+/*Setting Banner for About page*/
+div.banner{
+    background-image: url("https://images.unsplash.com/photo-1560427183-4efd29c38997?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(90%);
+}
+/*Setting banner for Shop page*/
+div.shop-banner{
+    background-image: url("https://images.unsplash.com/photo-1573731035338-dd80689b7556?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2380&q=80");
+    height: 17rem;
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(90%);
+}
+
+/*Modifying title font sizes & styles*/
+h1.tag-line{
+    font-family: chalkduster, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 5rem;
+    text-align: center;
+    padding: 50px 0px;
+}
+h2{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin: 15px 0px 5px;
+}
+h3{
+    font-weight: bold;
+}
+h4,
+h5{
+    font-family: chalkduster, Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 1.3rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+/*Shop page eleemtn restriction*/
+.cookie{
+    max-width: 95%;
+    margin: 10px auto;
+    box-shadow: 7px 8px 10px #888888;
+}
+
+/*Giving the founder section on about page extra pop with background*/
+.image{
+    background-color: lightgray;
+    width: 100%;
+    margin: 30px 0px;
+    padding: 10px 0px;
+}
+img.person{
+    max-width: 20rem;
+    border-radius: 50%;
+}
+.sub-script{
+    max-width: 80%;
+    margin: 0 auto;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+
+/*Setting the shop page elements as square*/
+
+.cookie{
+    width: 500px;
+    height: 500px;
+}
+
+
+/*--------Footer----------*/
+
+footer{
+    background-color: saddlebrown;
+    display: grid;
+    grid-template-rows: 1fr, 1fr;
+    padding: 1.4rem 1rem 1.4rem 1rem;
+    margin-top: 30px;
+}
+h4.f-title{
+    text-align: center;
+    font-family: brush script MT;
+    color: white;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+.contact-info{
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+/*----------------------------------------------------------------------
+----------------------------Tablet Layout------------------------------
+----------------------------------------------------------------------*/
+@media screen and (min-width:900px){
+        /* Elements used in both pages*/
+    #bigboy{
+        display: inline;
+    }
+    .baking{
+        max-width: 200px;
+        background-color: white;
+        border-radius: 50%;
+        padding: 20px 0px;
+    }
+    .brown{
+        background-color: saddlebrown;
+        max-width: 50rem;
+        grid-area: nav;
+    }
+    footer{
+        display: none;
+    }
+    
+        /* About Layout*/
+
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas: 
+          "nav banner banner"
+          "nav body found"
+          "nav bad bad";
+        }
+        .banner{
+            grid-area: banner;
+        }
+        .below{
+            grid-area: bad;
+            max-width: 100%;
+        }
+        .image{
+            background-color: white;
+        }
+        /* Shop Layout */
+
+    .grity{
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 2fr;
+        grid-template-areas: 
+        "nav banner banner"
+        "nav cookie-a cookie-b"
+        "nav cookie-c cookie4"
+        "nav cookie5 cookie6";
+    }
+    .shop-banner{
+        grid-area: banner;
+    }
+    #img1{
+        grid-area: cookie-a;
+    }
+    #img2{
+        grid-area: cookie-b;
+    }
+    #img3{
+        grid-area: cookie-c;
+    } 
+    #img4{
+        grid-area: cookie4;
+    }
+    #img5{
+        grid-area: cookie5;
+    }
+    #img6{
+        grid-area: cookie6;
+    }
+}
+
+/*----------------------------------------------------------------------
+----------------------------Desctop Layout------------------------------
+----------------------------------------------------------------------*/
+@media screen and (min-width:1300px){
+                  
+    
+               /*Setting About page Grid*/
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+        grid-template-areas: 
+        "nav banner banner"
+        "nav body found"
+        "nav bad bad";
+    }
+    .sub-script{
+        max-width: 60%;
+    }
+                    /*Styling Shop page*/
+    .grity{
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 2fr 2fr;
+        grid-template-areas: 
+        "nav banner banner banner"
+        "nav cookie-a cookie-b cookie-c"
+        "nav cookie4 cookie5 cookie6";
+    }
+}
