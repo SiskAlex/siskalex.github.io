@@ -20,22 +20,24 @@
         <nav >
           <ul class="nav nav">
             <li class="col nav-item">
-              <a class="text-primary nav-link active" href="#">Intro</a>
+              <a class="text-primary nav-link active" href="#Intro">Intro</a>
             </li>
             <li class="col nav-item">
-              <a class="text-primary nav-link active" href="#">Bootstrap</a>
+              <a class="text-primary nav-link active" href="#Bootstrap">Bootstrap</a>
             </li>
             <li class="col nav-item">
-              <a class="text-primary nav-link active" href="#">Classes</a>
+              <a class="text-primary nav-link active" href="#Classes">Classes</a>
             </li>
             <li class="col nav-item order-last">
-              <a class="text-primary nav-link active" href="#">FAQ</a>
+              <a class="text-primary nav-link active" href="#FAQ">FAQ</a>
             </li>
           </ul>
         </nav >
       </div>
       </div>
     </section>
+    <img src="img/bootstrap-banner.png" class="w-100" alt="Responsive image">
+
       <section id="Intro">
         <h3 class="alert-info">Intro</h3>
         <div class="container">
@@ -43,9 +45,7 @@
           
           <p>Bootstrap is a coding framework used for quickly developing responsive mobile layouts. The founders of Bootstrap, Mark Otto & Jacob Thornton, describe their product as "The most popular HTML, CSS, and JS framwork for developing responsive, mobile first projects on web." But, what does that all mean? </p>
           
-          <p>A coding framework is defined by  Brooke Campbell as: <strong>"A framework is a collection of programs brought together to accomplish a task, make coding more efficient and generally make the lives of coders easier."</strong> Therfore, we can construe that Boostrap is a collection of code made to make coding a website easier for the coder.</p>
-
-          <img src="img/bootstrap-banner.png" class="img-fluid col-12" alt="Responsive image">
+          <p>A coding framework is defined by  Brooke Campbell as: <strong>"a collection of programs brought together to accomplish a task, make coding more efficient and generally make the lives of coders easier."</strong> Therfore, we can construe that Boostrap is a collection of code made to make coding a website easier for the coder.</p>
           <br>
           <br>
         </div>
@@ -58,42 +58,75 @@
           <p>Here is a step by step tutorial for how to initialize bootstrap in to your code.</p>
           <ol>
             <li>Head over the the <a href="https://getbootstrap.com/">Bootstrap</a> website.</li>
-            <li>Click on the <a href="https://getbootstrap.com/docs/4.4/getting-started/download/">Download</a> button. This will bring you to the Boostrap dowlad page where you will be able to dowload all nesesary files from Bootstrap. </li>
-            <li>Once on the downlad page you will have <strong> 3 main options </strong> on how to apply boostrap to your project; <strong>Compiled CSS and JS, Source Files,</strong> or <strong>Bootstrap CDN.</strong></li>
+            <li>Click on the <a href="https://getbootstrap.com/docs/4.4/getting-started/download/">Download</a> button. This will bring you to the Boostrap download page where you will be able to download all nesesary files from Bootstrap. </li>
+            <li>Once on the download page you will have <strong> 3 main options </strong> on how to apply Bootsrap to your project; <strong>Compiled CSS and JS, Source Files,</strong> or <strong>Bootstrap CDN.</strong></li>
             <br>
               <section class="alert-warning rounded">
                 <ol>
-                  <li>The simplest option is to <strong>coppy/paste</strong> the <strong>Bootstrap CDN code lines</strong> at the top of your page</li>
+                  <li>The simplest option is to <strong>copy/paste</strong> the <strong>Bootstrap CDN code lines</strong> at the top of your page</li>
                   <ul>
-                    <li>This will directly link your project to the Bootstrap library letting you utelise it's library <strong>without downlad.</strong></li>
+                    <li>This will directly link your project to the Bootstrap library letting you utilize it's library <strong>without download.</strong></li>
                   </ul>
                   <br>
-                  <li>Second option is to dowload the <strong>Compiled CSS and JS.</strong> then find the downladed folder, open it and link the CSS & JS files from that folder to your project similarly done in the CDN code.</li>
+                  <li>Second option is to download the <strong>Compiled CSS and JS.</strong> then find the downloaded folder, open it and link the CSS & JS files from that folder to your project similarly done in the CDN code.</li>
                   <br>
                   <li>Third option is to download the <strong>Source Files.</strong> This option will give you a folder with all of the Bootstrap SASS files. You will need to link the CSS once again to your project at the top with the &lt;link rel:"stylesheet" href:...&gt; just like both other options.</li>
                   <ul>
-                    <li>This permits for greater control over the source files, however should <strong> not be used by novice coders </strong> who do not understand SASS.</li>
+                    <li >This permits for greater control over the source files, however should <strong> not be used by novice coders </strong> who do not understand SASS.</li>
                   </ul>
                 </ol>
               </section>
               <br>
-              <li>Once the files <strong> downloaded & linked </strong> to your html document, you may start coding your base HTML.</li>
-              <li>Bootstrap usses a series of classes to identify and apply properties to your code. In order to utilize Bootstrap fully you should familiorize yourself with classes used by Bootstrap.</li>
-              <li><i>Utilize the <strong>"Classes" portion </strong> below to help familiorize yourself with basic tools.</i></li>
+              <li>Once the files have been <strong> downloaded & linked </strong> to your HTML document, you may start coding your base HTML.</li>
+
+              <div id="Classes"></div> <!-- ID for nav quick acess placed higher then section to avoid nav covering top of the-->
+              
+              <li>Bootstrap uses a series of classes to identify and apply properties to your code. In order to utilize Bootstrap fully you should familiarize yourself with classes used by Bootstrap.</li>
+              <li><i>Utilize the <strong>"Classes" portion </strong> below to help familiarize yourself with basic tools.</i></li>
           </ol>
+
+          <h4>How Bootsrap Thinks</h4>
+          <p>Bootstrap is very usefult as when it comes to display everything is broken up in to a grid of <u>12 columns </u>. So when designing in Bootstrap, one must always be thinking in a mindset of 12 columns. No one element can take up more then 12 columns and two combined elemts with widths equaling greater then 12 will result in Bootstrap placing the second element on a new row below the first.</p>
+          <div class="grid row border">
+            <div class="col-1 border">1</div>
+            <div class="col-1 border">2</div>
+            <div class="col-1 border">3</div>
+            <div class="col-1 border">4</div>
+            <div class="col-1 border">5</div>
+            <div class="col-1 border">6</div>
+            <div class="col-1 border">7</div>
+            <div class="col-1 border">8</div>
+            <div class="col-1 border">9</div>
+            <div class="col-1 border">10</div>
+            <div class="col-1 border">11</div>
+            <div class="col-1 border">12</div>
+          </div>
+          <br>
+          <p>In this grid there can be an infinite amount of rows, however, there can never be more then 12 columns unless you modify the source code.</p>
         </div>
 
       </section>
-      <section id="Classes">
+      <section>
         <h3 class="alert-info">Classes</h3>
         <div class="container">
           <h4>List of Basic Classes</h4>
           <section>
             <ul>
-              <li>Colors</li>
-              <Section class="col">
-                <div class="p-3 mb-2 bg-primary text-white">Primary</div>
+              <h5>Colors</h5>
+              <Section class="col border p-3">
+                <div class="p-3 mb-2 bg-primary text-white rounded">*-Primary</div>
+                <div class="p-3 mb-2 bg-info text-white rounded">*-Info</div>
+                <div class="p-3 mb-2 bg-success text-white rounded">*-Success</div>
+                <div class="p-3 mb-2 bg-secondary text-white rounded">*-Secondary</div>
+                <div class="p-3 mb-2 bg-warning text-white rounded">*-Warning</div>
+                <div class="p-3 mb-2 bg-danger text-white rounded">*-Danger</div>
+                <div class="p-3 mb-2 bg-dark text-white rounded">*-Dark</div>
+                <div class="p-3 mb-2 bg-light text-secondary rounded">*-Light</div>
+                <div class="p-3 mb-2 bg-white text-secondary rounded">*-White</div>
               </Section>
+              <br>
+              <section class="col">
+              <h5>Text Colors</h5>
               <ul>
                 <li class="text-primary"> class="text-primary"</li>
                 <li class="text-success"> class="text-success"</li>
@@ -101,8 +134,24 @@
                 <li class="text-warning"> class="text-warning"</li>
                 <li class="text-info"> class="text-info"</li>
                 <li class="text-secondary"> class="text-secondary"</li>
+                <li class="text-dark"> class="text-dark"</li>
+                <li class="text-light bg-dark"> class="text-light"</li>
+                <li class="text-muted">class="text-muted"</li>
+                <li class="text-white bg-dark"> class="text-white"</li>
               </ul>
-              <li>Class="Container"</li>
+              </section>
+              <br>
+              <section>
+                <h5>Alerts</h5>
+                <ul>
+                  <li class="p-1 alert-danger">Alert Danger!</li>
+                  <li class="p-1 alert-warning">Alert Warning!</li>
+                  <li class="p-1 alert-success">Alert Success!</li>
+                  <li class="p-1 alert-primary">Alert Primary!</li>
+                  <li class="p-1 alert-info">Alert Info!</li>
+                </ul>
+              </section>
+              <br>
             </ul>
 
           </section>
