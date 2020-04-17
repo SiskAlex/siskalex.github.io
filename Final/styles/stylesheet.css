@@ -1,0 +1,394 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*---------------------------------------------------------------------------*/
+.logo{
+    max-width: 5rem;
+    margin: 10px;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    color: white;
+}
+.home-bg{
+    background-image: url("banenr-Home.jpg");
+    min-height: 44rem;
+   
+    background-position: 0% 74%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#navigation{
+    display: none;
+}
+.hamburger{
+    max-width: 1.5rem;
+    margin: 10px;
+    position: absolute;
+    right: 3rem;
+}
+#welcome{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: right;
+    max-width: 10rem;
+    margin: 0 auto;
+    margin-top: 30rem;
+    font-size: 2rem;
+}
+.alex{
+    font-size: 1rem;
+}
+.tilted{
+    writing-mode: vertical-lr;
+}
+.box-w{
+    border: 3px solid white;
+    padding: 10px;
+    text-align: center;
+    margin: 10px 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#body{
+    max-width: 95%;
+    margin: 0 auto;
+}
+.box{
+    width: 100%;
+    height: 200px;
+    margin: 10px 0px;
+    background-color:grey;
+    color: white;
+}
+.tom{
+    padding-top: 10rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
+}
+.timmy{
+    padding-top: 23.5rem;
+    font-weight: 700;
+}
+.tommy{
+    padding-top: 18rem;
+}
+.nook{
+    padding-top: 27rem;
+}
+.sub{
+    font-size: 0.9rem;
+    padding: 5px;
+    font-weight: normal;
+}
+.box-1{
+    grid-area: box-1;
+    background-image: url("img/alex.png");
+    background-size: 187%;
+    background-position: 40% 50%;
+    height: 30rem;
+}
+.box-2{
+    grid-area: box-2;
+    background-size: cover;
+    background-image: url("img/train.jpg");
+    height: 20rem;
+    background-position: 40% 30%;
+
+}
+.box-3{
+    grid-area: box-3;
+    background-size: cover;
+    background-image: url("img/cloud-city.jpg");
+}
+.box-4{
+    grid-area: box-4;
+    background-size: cover;
+    background-image: url("img/Sew.jpg");
+    background-position: 0% 40%;
+}
+.rec{
+    grid-area: rec;
+    height: 30rem;
+    background-size: cover;
+    background-image: url("img/skycity.jpg");
+    background-position: 50% 40%;
+}
+.long{
+    grid-area: new;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    background-color: black;
+}
+h3#projects{
+    color: white;
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 20px 0px;
+}
+.article{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.post{
+    background-color: white;
+    padding: 20px;
+}
+.post-1{
+    background-image: url("img/china.jpg");
+    background-size: cover;
+    height: 10rem;
+    width: 100%;
+}
+.post-2{
+    background-image: url("img/code.jpg");
+    background-size: cover;
+    height: 10rem;
+    width: 100%;
+}
+.blue{
+    color: #2699FB;
+}
+.twiter{
+    max-width: 100%;
+    margin: 40px 0px 0px;
+}
+
+/*----------------Section Break-------------*/
+.sub-banner{
+    width: 100%;
+    height: 43rem;
+    background-image: url(img/the-law.jpg);
+    background-size: 120%;
+    background-position: 100% 40%;
+    margin: 20px 0px;
+}
+
+/*Form editing*/
+form{
+    padding: 20px 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.row{
+    margin: 30px 0px;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 70px;
+}
+form .field{
+    background-color: rgb(61, 61, 61);
+    padding: 30px 5px 0px;
+    color: white;
+    font-size: 1rem;
+    border: none;
+    text-align: center;
+}
+input{
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    height: 100%;
+    font-size: 0.99rem;
+    color: gray;
+}
+/*Form Grid*/
+#drums{
+    margin: 0;
+    padding: 30px 5px;
+
+}
+.sub-grid{
+    display: grid;
+    grid-template-areas:
+    "butt oppti-1 oppti-2"
+    "text text text";
+    grid-template-columns: 20% 40% 40%;
+}
+#deets{
+    grid-area: text;
+    width: 100%;
+    height: 10rem;
+}
+.radio-row{
+    display: flex;
+}
+#the-only-button{
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 5px solid lightgrey;
+    color: white;
+    padding: 20px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 30px 2px;
+    cursor: pointer;
+    position: absolute;
+    right: 2rem;
+    box-sizing: border-box;
+}
+/*Footer Stylings*/
+footer{
+    background-color: black;
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#social-media{
+    max-width: 10rem;
+    padding-left: 1rem ;
+}
+.secret-text{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 722px) {
+    #main-content{
+        display: grid;
+        grid-template-areas: 
+        "box-1 new"
+        "box-2 new"
+        "box-3 new"
+        "box-4 new"
+        "rec new";
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+        max-width: 90%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .long{
+        grid-area: new;
+        padding-bottom: 0;
+    }
+    .tom{
+        padding-top: 6.5rem;
+        font-weight: 900;
+    }
+    .timmy{
+        padding-top: 18rem;
+    }
+    .nook{
+        padding-top: 10rem;
+    }
+    .box{
+        height: 9rem;
+    }
+    div.box-1{
+        height: 25rem;
+    }
+    div.rec{
+        height: 13rem;
+    }
+    .moved{
+        max-width: 40rem;
+    }
+    form.contact{
+        margin-left: 0;
+    }
+    .post-1{
+        height: 30rem;
+    }
+}
+@media screen and (min-width: 1200px){
+    #main-content{
+        display: grid;
+        grid-template-areas: 
+        "box-1 box-2 new"
+        "box-3 box-4 new"
+        "rec rec new";
+        grid-gap: 20px;
+        max-width: 85%;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .box{
+        width: 100%;
+        height: 400px;
+        margin: 10px 0px;
+        background-color:grey;
+        color: white;
+    }
+    .long{
+        max-width: 400px;
+    }
+    .tom{
+        padding-top: 20rem;
+        font-weight: 900;
+    }
+    div.nook{
+        padding-top: 10rem;
+    }
+    .post-1{
+        height: 20rem;
+    }
+}

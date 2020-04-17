@@ -1,0 +1,70 @@
+.alex{
+    max-width: 100%;
+    margin: 0 auto;
+}
+.smaller{
+    display: none;
+}
+p{
+    font-size: 1.1rem;
+}
+.blurb{
+    max-width: 95%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.imagio{
+    display: none;
+}
+.button{
+    background-color: black;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding: 20px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+.twin{
+    display: none;
+}
+
+@media screen and (min-width: 772px){
+    .col-na{
+        display: none;
+    }
+    .hold-me{
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .blurb{
+        font-size: 1.3rem;
+    }
+    .imagio{
+        display: block;
+    }
+    .twin{
+        display: block;
+    }
+    .tripplet{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .col-0{
+        display: none;
+    }
+    .col-na{
+        display: inline-block;
+    }
+    .smaller{
+        display: inline-block;
+    }
+}
